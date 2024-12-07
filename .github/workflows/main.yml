@@ -32,9 +32,7 @@ jobs:
 
       - name: Convert Executed Notebook to HTML
         run: |
-          cd output
           jupyter nbconvert --to html 1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
-          cd ..
 
       - name: List files
         run: ls -la  # Debugging step
@@ -44,5 +42,5 @@ jobs:
         with:
           name: executed_notebooks
           path: |
-            output/1_1_ML_C41_Python_Crash_Course.ipynb
-            output/1_1_ML_C41_Python_Crash_Course.html
+            1_1_ML_C41_Python_Crash_Course.ipynb
+            1_1_ML_C41_Python_Crash_Course.html
