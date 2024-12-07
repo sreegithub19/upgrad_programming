@@ -42,4 +42,10 @@ jobs:
           path: |
             # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
             # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.html
-            1_Prep_sessions/output
+            1_Prep_sessions/output/
+
+      - name: Download output folder
+        uses: actions/download-artifact@v4
+        with:
+            name: output-folder
+            path: ./1_Prep_sessions/output/
