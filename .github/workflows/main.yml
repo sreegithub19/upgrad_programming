@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Jupyter Notebook
         run: |
-            mkdir output
+            mkdir -p output
             jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output output/1_1_ML_C41_Python_Crash_Course.ipynb
             cd ..
 
