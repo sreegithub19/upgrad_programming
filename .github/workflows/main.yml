@@ -33,8 +33,7 @@ jobs:
 
       - name: Convert Executed Notebook to HTML
         run: |
-            ls -la
-    #       jupyter nbconvert --to html 1_1_ML_C41_Python_Crash_Course_output.ipynb --output 1_1_ML_C41_Python_Crash_Course_output
+            jupyter nbconvert --to html 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course_output.ipynb --output 1_1_ML_C41_Python_Crash_Course_output
 
     #   - name: List files
     #     run: ls -la  # Debugging step
