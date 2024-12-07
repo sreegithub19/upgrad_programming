@@ -26,16 +26,16 @@ jobs:
 
       - name: Run Jupyter Notebook
         run: |
-            mkdir -p output/1_Prep_sessions
-            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output ../output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
+            mkdir -p output/output/1_Prep_sessions
+            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output ../output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
 
             # cd 1_Prep_sessions && mkdir output && cd ..
-            # jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
+            # jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
 
 
       - name: Convert Executed Notebook to HTML
         run: |
-            jupyter nbconvert --to html output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
+            jupyter nbconvert --to html output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
 
 
       - name: Upload Notebook and HTML as Artifacts
@@ -43,6 +43,4 @@ jobs:
         with:
           name: executed_notebooks
           path: |
-            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
-            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.html
             output/
