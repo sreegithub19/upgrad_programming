@@ -41,5 +41,6 @@ jobs:
         with:
           name: executed_notebooks
           path: |
-            1_Prep_sessions/1_1_ML_C41_Python_Crash_Course_output.ipynb
-            1_Prep_sessions/1_1_ML_C41_Python_Crash_Course_output.html
+            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course_output.ipynb
+            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course_output.html
+            1_Prep_sessions
