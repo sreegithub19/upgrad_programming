@@ -26,13 +26,12 @@ jobs:
 
       - name: Run Jupyter Notebook
         run: |
-            mkdir -p output
-            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course.ipynb
-            cd ..
+            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course_output.ipynb
+
 
       - name: Convert Executed Notebook to HTML
         run: |
-          jupyter nbconvert --to html 1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
+          jupyter nbconvert --to html 1_1_ML_C41_Python_Crash_Course_output.ipynb --output 1_1_ML_C41_Python_Crash_Course_output
 
       - name: List files
         run: ls -la  # Debugging step
