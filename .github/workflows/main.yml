@@ -33,16 +33,16 @@ jobs:
             # jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output output/1_1_ML_C41_Python_Crash_Course.ipynb
 
 
-    #   - name: Convert Executed Notebook to HTML
-    #     run: |
-    #         jupyter nbconvert --to html 1_Prep_sessions/output/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
+      - name: Convert Executed Notebook to HTML
+        run: |
+            jupyter nbconvert --to html output/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
 
 
-    #   - name: Upload Notebook and HTML as Artifacts
-    #     uses: actions/upload-artifact@v4
-    #     with:
-    #       name: executed_notebooks
-    #       path: |
-    #         # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
-    #         # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.html
-    #         1_Prep_sessions/output/
+      - name: Upload Notebook and HTML as Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: executed_notebooks
+          path: |
+            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
+            # 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.html
+            output/
