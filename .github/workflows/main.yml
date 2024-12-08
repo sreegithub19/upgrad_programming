@@ -21,22 +21,20 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbconvert numpy flask
+          pip install jupyter nbconvert numpy flask pandas
 
 
       - name: Run Jupyter Notebook
         run: |
             mkdir -p output/output/1_Prep_sessions
             jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output ../output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
-
-            # cd 1_Prep_sessions && mkdir output && cd ..
-            # jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
+            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_3_Data_science_Numpy.ipynb --output ../output/output/1_Prep_sessions/1_3_Data_science_Numpy.ipynb
 
 
       - name: Convert Executed Notebook to HTML
         run: |
             jupyter nbconvert --to html output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
-
+            jupyter nbconvert --to html output/output/1_Prep_sessions/1_3_Data_science_Numpy.ipynb --output 1_3_Data_science_Numpy
 
       - name: Upload Notebook and HTML as Artifacts
         uses: actions/upload-artifact@v4
