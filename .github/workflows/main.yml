@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbconvert numpy flask pandas
+          pip install jupyter nbconvert numpy flask pandas matplotlib seaborn
 
 
       - name: Run Jupyter Notebook
@@ -30,6 +30,7 @@ jobs:
             jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output ../output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb
             jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_2_Python_basics.ipynb --output ../output/output/1_Prep_sessions/1_2_Python_basics.ipynb
             jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_3_Data_science_Numpy.ipynb --output ../output/output/1_Prep_sessions/1_3_Data_science_Numpy.ipynb
+            jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_4_Data_visualization_Matplotlib_and_Seaborn.ipynb --output ../output/output/1_Prep_sessions/1_4_Data_visualization_Matplotlib_and_Seaborn.ipynb
 
             # Too many errors
             #jupyter nbconvert --to notebook --execute 1_Prep_sessions/1_3_Data_science_Pandas.ipynb --output ../output/output/1_Prep_sessions/1_3_Data_science_Pandas.ipynb
@@ -39,6 +40,7 @@ jobs:
             jupyter nbconvert --to html output/output/1_Prep_sessions/1_1_ML_C41_Python_Crash_Course.ipynb --output 1_1_ML_C41_Python_Crash_Course
             jupyter nbconvert --to html output/output/1_Prep_sessions/1_3_Data_science_Numpy.ipynb --output 1_3_Data_science_Numpy
             jupyter nbconvert --to html output/output/1_Prep_sessions/1_2_Python_basics.ipynb --output 1_2_Python_basics
+            jupyter nbconvert --to html output/output/1_Prep_sessions/1_4_Data_visualization_Matplotlib_and_Seaborn.ipynb --output 1_4_Data_visualization_Matplotlib_and_Seaborn
 
             # Too many errors
             #jupyter nbconvert --to html output/output/1_Prep_sessions/1_3_Data_science_Pandas.ipynb --output 1_3_Data_science_Pandas
