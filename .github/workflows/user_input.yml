@@ -1,0 +1,28 @@
+name: Double the Number Workflow
+
+on:
+    push:
+        branches:
+        - main
+    workflow_dispatch:
+        inputs:
+            number:
+                description: 'Enter a number to double:'
+                required: true
+                type: number
+
+        
+
+jobs:
+  calculate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Calculate double the number
+      run: |
+        echo "User provided number: ${{ github.event.inputs.number }}"
+        double_number=$(( ${github.event.inputs.number} * 2 ))
+        echo "Double of the number is: $double_number"
