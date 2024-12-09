@@ -1,17 +1,12 @@
 name: Double the Number Workflow
 
 on:
-    push:
-        branches:
-        - main
-    workflow_dispatch:
-        inputs:
-            number:
-                description: 'Enter a number to double:'
-                required: true
-                type: number
-
-        
+  workflow_dispatch:
+    inputs:
+      number:
+        description: 'Enter a number to double'
+        required: true
+        type: number
 
 jobs:
   calculate:
@@ -23,6 +18,14 @@ jobs:
 
     - name: Calculate double the number
       run: |
-        echo "User provided number: ${{ github.event.inputs.number }}"
-        double_number=$(( ${github.event.inputs.number} * 2 ))
+        # Get the user-provided number from input
+        number=${{ github.event.inputs.number }}
+        
+        # Display the user-provided number
+        echo "User provided number: $number"
+        
+        # Calculate double of the number
+        double_number=$(( number * 2 ))
+        
+        # Output the result
         echo "Double of the number is: $double_number"
