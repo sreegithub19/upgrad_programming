@@ -5,7 +5,7 @@ from constants import *
 
 
 def get_inference_data():
-    data = pd.read_csv("../../2_Introduction_to_Inference_Process/inference_heart_disease.csv") # Live connection to the database
+    data = pd.read_csv("Data/inference_heart_disease.csv") # Live connection to the database
     data.drop_duplicates(subset=None, inplace=True)
     data.duplicated().any()
     
