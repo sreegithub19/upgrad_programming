@@ -23,10 +23,10 @@
 ################ NLP
 
 # "aclImdb/train" : https://drive.google.com/drive/u/0/folders/1KUnMvuufvo0yXS23EaI2EMNaq2lt5Ynh
-2_Course_continuation/_3_NLP/_4_Semantic_processing/_2_Distributional_Semantics/data/aclImdb/train
+#2_Course_continuation/_3_NLP/_4_Semantic_processing/_2_Distributional_Semantics/data/aclImdb/train
 
 # "aclImdb/test" : https://drive.google.com/drive/u/0/folders/1KUnMvuufvo0yXS23EaI2EMNaq2lt5Ynh
-2_Course_continuation/_3_NLP/_4_Semantic_processing/_2_Distributional_Semantics/data/aclImdb/test
+#2_Course_continuation/_3_NLP/_4_Semantic_processing/_2_Distributional_Semantics/data/aclImdb/test
 
 # "data/glove.6B" : http://nlp.stanford.edu/data/glove.6B.zip (or) https://huggingface.co/stanfordnlp/glove/resolve/main/glove.6B.zip
 2_Course_continuation/_3_NLP/_4_Semantic_processing/_2_Distributional_Semantics/data/glove.6B
