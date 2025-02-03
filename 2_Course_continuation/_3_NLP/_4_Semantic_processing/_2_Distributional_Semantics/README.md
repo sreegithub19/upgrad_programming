@@ -1,0 +1,2 @@
+- Please refer to this link:
+    -  https://github.com/sreegithub19/all_in_one_repo/tree/main/_2_Distributional_Semantics 
