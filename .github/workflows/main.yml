@@ -21,9 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter nbconvert ipython
+          pip install jupyter nbconvert ipython numpy pandas seaborn matplotlib plotly imblearn xgboost
 
 
       - name: Run .py files
         run: |
-          ipython 2_Course_continuation/_2_Exam_2/3_Machine_learning_2/8_Telecom_Churn_Group_Case_Study/Tel-Chrn-muni-old.py
+          cd 2_Course_continuation/_2_Exam_2/3_Machine_learning_2/8_Telecom_Churn_Group_Case_Study
+          ipython Tel-Chrn-muni-old.py
