@@ -1765,7 +1765,7 @@ df.head()
 
 
 # Adaboost without PCA
-churn_probability_adaboost = random_search_ada.predict(test_v1_scaled)
+churn_probability_adaboost = random_search_ada.fit_predict(test_v1)
 df['churn_probability_adaboost'] = pd.DataFrame(churn_probability_adaboost,columns=['churn_probability_adaboost'])
 display(df.shape)
 
