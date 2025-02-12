@@ -28,3 +28,4 @@ jobs:
         run: |
           cd 2_Course_continuation/_2_Exam_2/3_Machine_learning_2/8_Telecom_Churn_Group_Case_Study
           #ipython Tel-Chrn-muni-old.py
+          ipython Telecom+Churn+_+ML+Group+Case+Study.py
