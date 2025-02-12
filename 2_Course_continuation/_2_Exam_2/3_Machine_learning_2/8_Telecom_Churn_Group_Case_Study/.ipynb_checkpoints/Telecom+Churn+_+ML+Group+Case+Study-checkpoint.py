@@ -2240,38 +2240,38 @@ feat_importances.nlargest(len(X.columns)).sort_values().plot(kind='barh', align=
 # In[ ]:
 
 
-# the graph above suggest that the top 25 features ranked in order of importance as produced by our RandomForest implementation are the features that belong to month 8 i.e., the action month. Hence, it is clear that what happens in the action phase has a direct impact on the customer churn of high value customers. Specifically, these features are as follows:
+the graph above suggest that the top 25 features ranked in order of importance as produced by our RandomForest implementation are the features that belong to month 8 i.e., the action month. Hence, it is clear that what happens in the action phase has a direct impact on the customer churn of high value customers. Specifically, these features are as follows:
 
 
 
 
-# 1.	**total_ic_mou_8**		-- *Total incoming minutes of usage in month 8*
-# 2.	**loc_ic_mou_8**		-- *local incoming minutes of usage in month 8*
-# 3.	**total_month_rech_8**	-- *Total month recharge amount in month 8*
-# 4.	**total_roam_mou_8**	-- *Total incoming+outgoing roaming minutes of usage in month 8*
-# 5.	**loc_ic_t2m_mou_8**	-- *local incoming calls to another operator minutes of usage in month 8*
-# 6.	**roam_og_mou_8**		-- *outgoing roaming calls minutes of usage in month 8*
-# 7.	**Total_loc_mou_8**		-- *Total local minutes of usage in month 8*
-# 8.	**roam_ic_mou_8**		-- *incoming roaming calls minutes of usage in month 8*
-# 9.	**total_rech_amt_8**	-- *total recharge amount in month 8*
-# 10.	**loc_ic_t2t_mou_8**	-- *local incoming calls from same operator minutes of usage in month 8*
-# 11.	**max_rech_amt_8**		-- *maximum recharge amount in month 8*
-# 12.	**last_day_rch_amt_8**	-- *last (most recent) recharge amount in month 8*
-# 13.	**arpu_8**				-- *average revenue per user in month 8*
-# 14.	**loc_og_mou_8**		-- *local outgoing calls minutes of usage in month 8*
-# 15.	**loc_og_t2n_mou_8**	-- *local outgoing calls minutes of usage to other operator mobile in month 8*
-# 16.	**av_rech_amt_data_8**	-- *average recharge amount for mobile data in month 8*
-# 17.	**total_rech_data_8**	-- *total data recharge (MB) in month 8*
-# 18.	**total_og_t2t_mou_8**	-- *total outgoing calls from same operator minutes of usage in month 8*
-# 19.	**total_rech_num_8**	-- *total number of recharges done in the month 8*
-# 20.	**total_rech_amt_data_8**	-- *total recharge amount for data in month 8*
-# 21.	**max_rech_data_8**		-- *maximum data recharge (MB) in month 8*
-# 22.	**avg_rech_amt_8**		-- *average recharge amount in month 8*
-# 23.	**fb_user_8**			-- *services of Facebook and similar social networking sites for month 8*
-# 24.	**vol_data_mb_8**		-- *volume of data (MB) consumed for month 8*
-# 25.	**count_rech_2g_8**		-- *Number of 2g data recharge in month 8*
-# 26.	**loc_og_to_ic_mou_8**	-- *local outgoing to incoming mou ratio for month of 8*
-# 27.	**spl_og_mou_7**		-- *Special outgoing call for the month of 7*
+1.	**total_ic_mou_8**		-- *Total incoming minutes of usage in month 8*
+2.	**loc_ic_mou_8**		-- *local incoming minutes of usage in month 8*
+3.	**total_month_rech_8**	-- *Total month recharge amount in month 8*
+4.	**total_roam_mou_8**	-- *Total incoming+outgoing roaming minutes of usage in month 8*
+5.	**loc_ic_t2m_mou_8**	-- *local incoming calls to another operator minutes of usage in month 8*
+6.	**roam_og_mou_8**		-- *outgoing roaming calls minutes of usage in month 8*
+7.	**Total_loc_mou_8**		-- *Total local minutes of usage in month 8*
+8.	**roam_ic_mou_8**		-- *incoming roaming calls minutes of usage in month 8*
+9.	**total_rech_amt_8**	-- *total recharge amount in month 8*
+10.	**loc_ic_t2t_mou_8**	-- *local incoming calls from same operator minutes of usage in month 8*
+11.	**max_rech_amt_8**		-- *maximum recharge amount in month 8*
+12.	**last_day_rch_amt_8**	-- *last (most recent) recharge amount in month 8*
+13.	**arpu_8**				-- *average revenue per user in month 8*
+14.	**loc_og_mou_8**		-- *local outgoing calls minutes of usage in month 8*
+15.	**loc_og_t2n_mou_8**	-- *local outgoing calls minutes of usage to other operator mobile in month 8*
+16.	**av_rech_amt_data_8**	-- *average recharge amount for mobile data in month 8*
+17.	**total_rech_data_8**	-- *total data recharge (MB) in month 8*
+18.	**total_og_t2t_mou_8**	-- *total outgoing calls from same operator minutes of usage in month 8*
+19.	**total_rech_num_8**	-- *total number of recharges done in the month 8*
+20.	**total_rech_amt_data_8**	-- *total recharge amount for data in month 8*
+21.	**max_rech_data_8**		-- *maximum data recharge (MB) in month 8*
+22.	**avg_rech_amt_8**		-- *average recharge amount in month 8*
+23.	**fb_user_8**			-- *services of Facebook and similar social networking sites for month 8*
+24.	**vol_data_mb_8**		-- *volume of data (MB) consumed for month 8*
+25.	**count_rech_2g_8**		-- *Number of 2g data recharge in month 8*
+26.	**loc_og_to_ic_mou_8**	-- *local outgoing to incoming mou ratio for month of 8*
+27.	**spl_og_mou_7**		-- *Special outgoing call for the month of 7*
 
 
 # Local calls Mou's be it incoming or outgoing have a very important role for churn predictions. Reduction in these KPI's forms a clear indicator of churn.
