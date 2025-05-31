@@ -1,21 +1,21 @@
 ## Major Upgrad Projects
 
 - [Lending Club Case Study](https://github.com/sreegithub19/upgrad_programming/tree/main/2_Course_continuation/_1_Exam_1/1_Statistics_essentials/4_Lending_club_case_study)
-- Housing Case Study (using Linear regression) 
-- Bike Sharing assignment
-- Media Company Case Study  
-- Telecom Churn Case study (using Logistic regression)
-    - Naive Bayes Spam classifier
-    - Advanced regression assignment
-    - Heart disease Prediction
-    - Housing Case Study (using Decision Trees) 
-    - Telecom Churn Case Study (using Random Forest classifier)
-    - Melanoma Detection Assignment
-    - Industrial Applications of CNNs
-    - Text generation using RNN
-    - Gesture Recognition Assignment
-    -NLP_Case_Study__Automatic_Ticket_Classification
-    - NLP Spelling corrector
-    - NLP Spam Ham Detection
-    - Capstone project - Credit Card Fraud Detection
+- [Housing Case Study (using Linear regression)](https://github.com/sreegithub19/upgrad_programming/tree/main/2_Course_continuation/_1_Exam_1/2_Machine_learning/1_Linear_regression/3_4_MLR_with_Python/Multiple%20Linear%20Regression%20in%20Python)
+- [Bike Sharing assignment](https://github.com/sreegithub19/upgrad_programming/tree/main/2_Course_continuation/_1_Exam_1/2_Machine_learning/1_Linear_regression/2_Bike_sharing_assignment)
+- [Media Company Case Study](https://github.com/sreegithub19/upgrad_programming/blob/main/2_Course_continuation/_1_Exam_1/2_Machine_learning/1_Linear_regression/5_Industry%20Relevance%20of%20Linear%20Regression/Media%2BCompany%20(1).ipynb) 
+- [Telecom Churn Case study (using Logistic regression)](https://github.com/sreegithub19/upgrad_programming/blob/main/2_Course_continuation/_1_Exam_1/2_Machine_learning/2_Logistic_Regression/2_Multivariate_logistic_regression/telecom-churn-prediction-logistic-regression%20(1).ipynb)
+    - [Naive Bayes Spam classifier](https://github.com/sreegithub19/upgrad_programming/blob/main/2_Course_continuation/_1_Exam_1/2_Machine_learning/3_Naive_Bayes/Naive-Bayes-main/Naive%20Bayes%20for%20text%20classification/sms-spam-classifier-naive-bayes-ml-algo%20(1).ipynb)
+    - [Advanced regression assignment](https://github.com/sreegithub19/upgrad_programming/blob/main/2_Course_continuation/_2_Exam_2/3_Machine_learning_2/1_Advanced_regression/Assignment/Advanced_regression_github_repo/Advanced_regression_assignment.ipynb)
+    - [Heart disease Prediction]()
+    - [Housing Case Study (using Decision Trees)]()
+    - [Telecom Churn Case Study (using Random Forest classifier)]()
+    - [Melanoma Detection Assignment]()
+    - [Industrial Applications of CNNs]()
+    - [Text generation using RNN]()
+    - [Gesture Recognition Assignment]()
+    - [NLP_Case_Study__Automatic_Ticket_Classification]()
+    - [NLP Spelling corrector]()
+    - [NLP Spam Ham Detection]()
+    - [Capstone project - Credit Card Fraud Detection]()
 
