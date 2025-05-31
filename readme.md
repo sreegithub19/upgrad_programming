@@ -1,6 +1,6 @@
 ## Major Upgrad Projects
 
-<a src="https://github.com/sreegithub19/upgrad_programming/tree/main/2_Course_continuation/_1_Exam_1/1_Statistics_essentials/4_Lending_club_case_study">Lending Club Case Study</a>
+[Lending Club Case Study](https://github.com/sreegithub19/upgrad_programming/tree/main/2_Course_continuation/_1_Exam_1/1_Statistics_essentials/4_Lending_club_case_study)
 Housing Case Study (using Linear regression) 
 Bike Sharing assignment
 Media Company Case Study  
